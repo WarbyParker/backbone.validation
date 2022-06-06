@@ -1,10 +1,10 @@
 (function (factory) {
   if (typeof exports === 'object') {
-    module.exports = factory(require('backbone'), require('underscore'));
+    module.exports = factory(require('lodash'));
   } else if (typeof define === 'function' && define.amd) {
-    define(['backbone', 'underscore'], factory);
+    define(['lodash'], factory);
   }
-}(function (Backbone, _) {
+}(function (_) {
   //= backbone-validation.js
-  return Backbone.Validation;
+  return Validation;
 }));
